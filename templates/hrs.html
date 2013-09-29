@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1>HRs</h1>
+{% for hr in hrs %}
+<div>
+<h2><a href="/hrs/get/{{ hr.id}}/">{{hr.fullname}}</a></h2>
+
+</div>
+{% endfor %}
+</body>
+</html>
