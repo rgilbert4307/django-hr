@@ -103,8 +103,9 @@ ROOT_URLCONF = 'humanresources.urls'
 WSGI_APPLICATION = 'humanresources.wsgi.application'
 
 TEMPLATE_DIRS = (
-    "/home/ardian/projects/django-ardian/humanresources/templates",
-    "/home/ardian/projects/django-ardian/humanresources/hr/templates",
+    "/home/ardian/projects/django-ardian/humanresources/templates/",
+    "/home/ardian/projects/django-ardian/humanresources/hr/templates/",
+    "/home/ardian/projects/django-ardian/humanresources/userprofile/templates/",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -124,6 +125,7 @@ INSTALLED_APPS = (
     'report_builder',
     'django.contrib.admindocs',
     'hr',
+#    'userprofile',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,3 +156,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'

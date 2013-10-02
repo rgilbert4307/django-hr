@@ -1,5 +1,7 @@
-<html>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
 <h1>HRs</h1>
 {% for hr in hrs %}
 <div>
@@ -7,5 +9,4 @@
 
 </div>
 {% endfor %}
-</body>
-</html>
+{% endblock %}
