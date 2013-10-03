@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class UserProfile(models.Model):
-	user = models.OneToOneField(user)
+	user = models.OneToOneField(User)
 	likes_chees = models.BooleanField()
 	favourite_hamster_name = models.CharField(max_length=50)
 

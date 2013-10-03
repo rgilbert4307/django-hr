@@ -123,10 +123,26 @@ INSTALLED_APPS = (
    
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    'report_builder',
+#    'report_builder',
     'django.contrib.admindocs',
     'hr',
-#    'userprofile',
+    'south',
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    'userprofile',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -158,4 +174,4 @@ LOGGING = {
     }
 }
 
-#AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'

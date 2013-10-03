@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^hrs/', include('hr.urls')),
-    # (r'^accounts/', include('userprofile.urls')),
+    (r'^accounts/', include('userprofile.urls')),
     # Examples:
     # url(r'^hello/$', 'hr.views.hello'),
     # url(r'^hello_template/$', 'hr.views.hello_template'),

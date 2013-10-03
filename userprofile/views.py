@@ -1,17 +1,17 @@
 from django.shortcuts import render_to_response
-from django.http import HttResponseRedirect
+from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
 from forms import UserProfileForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required
-def user_profile(request)
+def user_profile(request):
 	if request.method == 'POST':
 		form = UserProfileForm(request.POST, instance=request.user.profile)
 		if form.is_valid():
 			form.save()
-			return HttResponseRedirect('/accounts/loggedin')
+			return HttpResponseRedirect('/accounts/loggedin/')
 	else:
 		user = request.user
 		profile = user.profile
@@ -22,5 +22,5 @@ def user_profile(request)
 
 	args['form'] = form
 
-	return render_to_response('profile.html'. args)	
+	return render_to_response('profile.html', args)	
 
