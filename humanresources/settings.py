@@ -123,7 +123,7 @@ INSTALLED_APPS = (
    
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-#    'report_builder',
+    'report_builder',
     'django.contrib.admindocs',
     'hr',
     'south',
